@@ -56,7 +56,19 @@ public class Aleatorio {
                         int Mod = leer.nextInt();
                         System.out.println("ingrese X0" + "= La semilla.");
                         int Xn = leer.nextInt();
-                        System.out.println("el resultado es\n" );
+                        System.out.println("ingrese coeficiente A");
+                        obj1.setCoeficienteA(leer.nextInt());
+                        System.out.println("ingrese coeficiente B");
+                        obj1.setCoeficienteB(leer.nextInt());
+                        System.out.println("ingrese coeficiente C");
+                        obj1.setCoeficienteC(leer.nextInt());
+                        System.out.println("ingrese valor del Exponente de X");
+                        obj1.setExponencialX(leer.nextInt());
+                        System.out.println("ingrese valor del intervalo X");
+                        obj1.setIntervalo1(leer.nextInt());
+                        System.out.println("ingrese valor del intervalo Y");
+                        obj1.setIntervalo2(leer.nextInt());
+                        System.out.println("el resultado es\n");
                         obj1.Multiplicativo(A, Xn, Mod);
                         break;
                     default:
@@ -68,5 +80,3 @@ public class Aleatorio {
 
             } 
     }
-
-
